@@ -1,0 +1,11 @@
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp2.0\RayMarching.deps.json
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp2.0\RayMarching.runtimeconfig.json
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp2.0\RayMarching.runtimeconfig.dev.json
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp2.0\RayMarching.dll
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp2.0\RayMarching.pdb
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp2.0\RayMarching.AssemblyInfoInputs.cache
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp2.0\RayMarching.AssemblyInfo.cs
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp2.0\RayMarching.csproj.CoreCompileInputs.cache
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp2.0\RayMarching.dll
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp2.0\RayMarching.pdb
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp2.0\RayMarching.genruntimeconfig.cache

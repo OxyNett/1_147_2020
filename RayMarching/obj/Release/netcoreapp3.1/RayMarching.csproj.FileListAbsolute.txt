@@ -1,0 +1,13 @@
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp3.1\RayMarching.exe
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp3.1\RayMarching.deps.json
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp3.1\RayMarching.runtimeconfig.json
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp3.1\RayMarching.runtimeconfig.dev.json
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp3.1\RayMarching.dll
+C:\Users\Игорь\source\repos\RayMarching\bin\Release\netcoreapp3.1\RayMarching.pdb
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp3.1\RayMarching.csprojAssemblyReference.cache
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp3.1\RayMarching.AssemblyInfoInputs.cache
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp3.1\RayMarching.AssemblyInfo.cs
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp3.1\RayMarching.csproj.CoreCompileInputs.cache
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp3.1\RayMarching.dll
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp3.1\RayMarching.pdb
+C:\Users\Игорь\source\repos\RayMarching\obj\Release\netcoreapp3.1\RayMarching.genruntimeconfig.cache
