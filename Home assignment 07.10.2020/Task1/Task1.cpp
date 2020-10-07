@@ -45,7 +45,7 @@ void TaskTwo()
 	{
 		for (int x = 0; x < a; x++)
 		{
-			if ((y == x) || (a - x == y+1))
+			if ((y == x) || (a - x == y + 1))
 				cout << "##";
 			else
 				cout << "  ";
@@ -82,35 +82,11 @@ void TaskFour()
 		HANDLE handle = GetStdHandle(STD_INPUT_HANDLE);
 		DWORD count;
 
-		if (WaitForSingleObject(handle, 0) == WAIT_OBJECT_0) {
+		if (WaitForSingleObject(handle, 0) == WAIT_OBJECT_0) 
+		{
 			ReadConsoleInput(handle, &event, 1, &count);
-			switch (event.Event.KeyEvent.wVirtualKeyCode)
-			{
-			case 0x30:
-					isKeyPressed = true;
-			case 0x31:
+			if ((event.Event.KeyEvent.wVirtualKeyCode >= 0x30) & (event.Event.KeyEvent.wVirtualKeyCode <= 0x39))
 				isKeyPressed = true;
-			case 0x32:
-				isKeyPressed = true;
-			case 0x33:
-				isKeyPressed = true;
-			case 0x34:
-				isKeyPressed = true;
-			case 0x35:
-				isKeyPressed = true;
-			case 0x36:
-				isKeyPressed = true;
-			case 0x37:
-				isKeyPressed = true;
-			case 0x38:
-				isKeyPressed = true;
-			case 0x39:
-				isKeyPressed = true;
-
-			default:
-				break;
-			}
-			
 		}
 		else
 			cout << "#";
