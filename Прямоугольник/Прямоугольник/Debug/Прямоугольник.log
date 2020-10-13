@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\priva\source\repos\Прямоугольник\Прямоугольник\Source.cpp(7,12): warning C4101: a_1: неиспользованная локальная переменная
+C:\Users\priva\source\repos\Прямоугольник\Прямоугольник\Source.cpp(7,17): warning C4101: b_1: неиспользованная локальная переменная
+  Прямоугольник.vcxproj -> C:\Users\priva\source\repos\Прямоугольник\Debug\Прямоугольник.exe
