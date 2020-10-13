@@ -1,0 +1,38 @@
+#include <iostream>
+#define repeat(n) for (int a = 0; a<n; a++) 
+
+using namespace std;
+
+int n;
+bool i;
+
+int main()
+{
+    cout << "Введите длину стороны квадрата" << endl;
+    cin >> n;
+    cout << "Заполнить квадрат? (1/0)" << endl;
+    cin >> i;
+    if (i)
+    {
+        repeat(n)
+        {
+            repeat(n) {cout << "#";}
+            cout << endl;
+        }
+    }
+    else
+    {
+        repeat(n) {cout << "#";}
+        cout << endl;
+        repeat(n-2)
+        {
+            cout << "#";
+            repeat(n-2)
+            {
+                cout << " ";
+            }
+            cout << "#" << endl;
+        }
+        repeat(n) {cout << "#";}
+    }
+}
