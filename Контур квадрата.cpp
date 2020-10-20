@@ -3,13 +3,13 @@ using namespace std;
 
 int main() 
 {
-  for(int x=1; x<11; x++)
+  for(int k=1; k<11; k++)
   {
-    for(int y=1; y<10; y++)
+    for(int n=1; n<10; n++)
     {
-      if((i==1) or (j==1) or (i==10) or (j==10))
+      if((k==1) or (n==1) or (k==10) or (n==10))
       {
-        cout << "##";
+        cout << "~";
       }
       else
       {
