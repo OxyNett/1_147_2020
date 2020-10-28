@@ -30,6 +30,17 @@ int main(int argc, char *argv[])
 	display(width, height, buffer, drawSymbols, drawEmpty);
 	
 	removeBuff(width, height, buffer);
+
+	//--------------------------
+	double a = 2.0;
+	double b = 4.1;
+	double xn = 0.77;
+	double xk = 1.77;
+	double dx = 0.2;
+	
+	std::cout << calc(a, b, xn) << std::endl;
+	taskA(a, b, xn, xk, dx);
+
 	return 0;
 }
 
