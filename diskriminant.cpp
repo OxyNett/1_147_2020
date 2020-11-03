@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <math.h>
 
 using namespace std;
@@ -41,5 +41,3 @@ int main()
 		cout << "koren raven: " << x1;
 	}
 }
-
-//это прога дискриминант
