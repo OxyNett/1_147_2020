@@ -25,7 +25,6 @@ int main()
 		xn = xn + dx;
 		cout << func(xn) << "." << endl;
 	}
-	xn = 0.26;
 
 	cout << endl;
 
