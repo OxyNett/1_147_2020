@@ -1,11 +1,15 @@
 #include <iostream>
 #include <conio.h>
+#include <windows.h>
 using namespace std;
 int a;
 int arg;
 int main()
 
+
 {
+	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(handle, FOREGROUND_GREEN);
 
 	while (!_kbhit())
 	{
