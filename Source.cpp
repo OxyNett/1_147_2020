@@ -89,7 +89,7 @@ void Display_A(double xn = 0, double xk = 0, char d[] = { }, int j = 0, double g
 			while (xn <= xk)
 			{
 				std::cout << xn << "   |   ";
-				xn = xn + 0.05;
+				xn = xn + 0.14;
 			}
 			std::cout << std::endl;
 		}
