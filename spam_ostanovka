@@ -1,0 +1,18 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int a;
+int arg;
+int main()
+
+{
+
+	while (!_kbhit())
+	{
+		cout << arg;
+		arg += rand() % 10000;
+
+	}
+
+	return 0;
+}
