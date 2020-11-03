@@ -2,7 +2,6 @@
 #include <cmath>
 #include <string>   //зачем это тут?
 
-#pragma once
 double calc(double a, double b, double x);
 double calc(double x);
 void tA(double a, double b, double xn, double xk, double dx);
@@ -36,11 +35,11 @@ void tA(double a, double b, double xn, double xk, double dx)
 	return;
 }
 
-void tB(double a, double b, double x, int size)
+void tB(double a, double b, double *x, int size)
 {
 	for (int i = 0; i < size; i++)
 	{
-		double x[] = { 1.9, 2.15, 2.34, 2.74, 3.16 };
+		//double x[] = { 1.9, 2.15, 2.34, 2.74, 3.16 };
 		double y = calc(a, b, x[i]);
 		char result[80];
 		sprintf_s(result, "x=%3.5f y=%.2f \n", x[i], y);
