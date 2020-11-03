@@ -6,8 +6,8 @@ using namespace std;
 
 double calc(double a, double b, double x)
 {
-	double numenator = log(pow(b, 2) - pow(x, 2)) / log(a);
-	double denominator = pow(abs(pow(x, 2) - pow(a, 2)), 1 / 3.0);
+	double numenator = log( abs(pow(b, 2) - pow(x, 2)) ) / log(a);
+	double denominator = pow(abs(pow(x, 2) - pow(a, 2)), 1.0 / 5.0);
 	double y = numenator / denominator;
 	return y;
 }
@@ -15,7 +15,7 @@ double calc(double a, double b, double x)
 double calc(double x)
 {
 	const double a = 2.0;
-	const double b = 4.1;
+	const double b = 1.1;
 	return calc(a, b, x);
 }
 
