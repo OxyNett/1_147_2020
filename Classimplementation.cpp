@@ -23,6 +23,13 @@ public:
 		system("cls");
 	}
 
+	void nya()
+	{
+		cout << '\n' << "War, war never changes";
+		//а какой можно 3-й метод для класса можно придумать, помогите и я исправлю этот код;
+		cout << '\n' << '\n' << '\n' << "(╯°□°）╯︵ ┻━┻" << '\n' << '\n' << "┬─┬ ノ( ゜-゜ノ)" << '\n' << '\n' << '\n' << endl;
+	}
+
 	void Display() 
 	{
 		cout << '\n' << this->variety << " >> " << this->name << " калибра " << this->calibre << endl;
@@ -44,6 +51,8 @@ int main()
 
 	my_weapon.Display();
 	enemy_weapon.Display();
+
+	my_weapon.nya();
 
 	return 0;
 }
