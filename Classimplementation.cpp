@@ -3,36 +3,58 @@
 #include <Windows.h>
 using namespace std;
 
-class rifleweapons
+class Rifleweapons
 {
-public:
-
+private:
 	string variety;
 	string name;
-	string calibre;
+	double calibre;
 
-	void setweapon()
+public:
+
+	char ch1 = (40);
+	char ch2 = (41);
+	char ch3 = (174);
+	char ch4 = (45);
+
+
+	Rifleweapons(string variety, string name, double calibre)
 	{
-		cout << "Введите тип оружия (Пистолет, автомат, пистолет-пулемёт, винтовка, ружьё или карабин" << "\n";
-		cin >> variety;
-		cout << "Введите название оружия" << "\n";
-		cin >> name;
-		cout << "Введите калибр оружия" << "\n";
-		cin >> calibre;
-		cout << " <3 ";
-		system("cls");
+		this->variety = variety;
+		this->name = name;
+		this->calibre = calibre;
+	}
+
+	Rifleweapons(string name, double calibre)
+	{
+		this->variety = "Assault rifle";
+		this->name = name;
+		this->calibre = calibre;
+	}
+
+	void riafulweapon(double calibre)
+	{
+		if (calibre > 0)
+		{
+			this->calibre = calibre;
+		}
+	}
+
+	void lubluconsol()
+	{
+		cout << '\n' << "А всё, оружие не работает. Иди решай проблему словами" << endl;
 	}
 
 	void nya()
 	{
 		cout << '\n' << "War, war never changes";
 		//а какой можно 3-й метод для класса можно придумать, помогите и я исправлю этот код;
-		cout << '\n' << '\n' << '\n' << "(╯°□°）╯︵ ┻━┻" << '\n' << '\n' << "┬─┬ ノ( ゜-゜ノ)" << '\n' << '\n' << '\n' << endl;
+		cout << '\n' << '\n' << '\n' << ch1 << ch3 << ch4 << ch3 << ch2 << '\n' << '\n' << '\n' << endl;
 	}
 
-	void Display() 
+	void display()
 	{
-		cout << '\n' << this->variety << " >> " << this->name << " калибра " << this->calibre << endl;
+		cout << '\n' << variety << " >> " << name << " калибра " << calibre << endl;
 	}
 };
 
@@ -41,18 +63,18 @@ int main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	cout << "В свойситвах консоли измените шрифт на 'Lucida Console' и перезапустите программу для корректного отображения текста" << "\n";
+	cout << "В свойситвах консоли измените шрифт на 'Lucida Console' и перезапустите программу для корректного отображения текста" << "\n" << "\n";
 
-	rifleweapons my_weapon;
-	my_weapon.setweapon();
+	Rifleweapons my_weapon("Pistol", "Colt M1911", 45);
+	my_weapon.riafulweapon(-2);
+	my_weapon.display();
 
-	rifleweapons enemy_weapon;
-	enemy_weapon.setweapon();
-
-	my_weapon.Display();
-	enemy_weapon.Display();
+	Rifleweapons enemy_weapon("Assault rifle", "AK-47", 7.62);
+	enemy_weapon.riafulweapon(5.56);
+	enemy_weapon.display();
 
 	my_weapon.nya();
+	my_weapon.lubluconsol();
 
 	return 0;
 }
