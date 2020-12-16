@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	for (int y = 0; y < 10; y++)
+	{
+		for (int x = 0; x < 10; x++)
+		{
+			if (((x == 0) or (x == 9)) or ((y == 0) or (y == 9)))
+			{
+				cout << "1";
+			}
+			else
+				cout << " ";
+		}
+		cout << endl;
+	}
+	return 0;
+}
