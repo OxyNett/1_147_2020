@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cstdio>
+int main()
+std::puts("Please enter 4 nubmers");
+int a = 0;
+int b = 0;
+int c = 0;
+int d = 0;
+
+scanf_s("%d %d %d %d", &a, &b, &c, &d, &g);
+getchar();
+int g = a + b + c + d;
+int h = g / 4;
+std::printf("solution: %f\n", h);
