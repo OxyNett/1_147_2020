@@ -22,7 +22,18 @@ public:
 		this->price = price;
 	}
 	Dish(string name):Dish(name, "190 g", 200) {}
+	void SetPrice(int price)
+	{
+		if (price >= 0 && price <= 200)
+		{
+			this->price = price;
+		}
 
+	}
+	int getPrice()
+	{
+		return this->price = price;
+	}
 	
 	void Display() {
 		cout << name << " " << weight << " " << price << endl;
@@ -31,29 +42,17 @@ public:
 	~Dish() {
 		cout << "Destraction position" << endl;
 	}
-
-	void SetPrice(int price)
-	{
-		if (price >= 0 && price <= 180)
-		{
-			this->price = price;
-		}
-
-	}
-	int getPrice()
-	{
-		return price;
-	}
-
 private:
 	int price;
 };
-
 int main()
 {
-	Dish cheescake("Cheesecake", "130 (g)", 200);
-	cheescake.Display();
+	Dish cheesecake("Cheesecake", "130 (g)", 200);
 	Dish maffin("Maffin", "100 (g)", 150);
+	cheesecake.Display();
+	cheesecake.SetPrice(50);
+	cheesecake.Display();
+	maffin.Display();
 	maffin.SetPrice(100);
 	maffin.Display();
 	return 0;
