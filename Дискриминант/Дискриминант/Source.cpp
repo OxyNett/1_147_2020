@@ -2,32 +2,41 @@
 #include <cmath>
 using namespace std;
 
-int main()
+double a_separate_function_1()
 {
-	setlocale(LC_ALL, "Russian");
-	double a, b, c, D, x, x1, x2;
-	cout << "Решение уравнения с помощью дискриминанта.\n";
-	cout << "Введите a: "; cin >> a;
-	cout << "Введите b: "; cin >> b;
-	cout << "Введите c: "; cin >> c;
+	double i;
+	cout << "Enter number: "; cin >> i;
+	return(i);
+}
+void a_separate_function_2(double a, double b, double c)
+{
+	double D, x, x1, x2;
 	D = b * b - 4 * a * c;
 	if (D < 0)
 	{
-		cout << "Дискриминант = " << D << ", что меньше 0, следовательно корней нет." << endl;
+		cout << "Discriminant = " << D << ", which is less than 0, therefore there are no roots." << endl;
 	}
 	if (D == 0)
 	{
 		x = (-b) / (2 * a);
-		cout << "Дискриминант = " << D << "." << endl;
-		cout << "Корень уравнения = " << x << "." << endl;
+		cout << "Discriminant = " << D << "." << endl;
+		cout << "Root of the equation = " << x << "." << endl;
 	}
 	else
 	{
-		cout << "Дискриминант = " << D << "." << endl;
+		cout << "Discriminant = " << D << "." << endl;
 		x1 = ((-b) + sqrt(D)) / (2 * a);
-		cout << "Первый корень уравнения = " << x1 << "." << endl;
+		cout << "The first root of the equation = " << x1 << "." << endl;
 		x2 = ((-b) - sqrt(D)) / (2 * a);
-		cout << "Второй корень уравнения = " << x2 << "." << endl;
+		cout << "The second root of the equation = " << x2 << "." << endl;
 	}
+}
+int main()
+{
+	cout << "Solving an Equation Using the Discriminant." << endl;
+	double a = a_separate_function_1();
+	double b = a_separate_function_1();
+	double c = a_separate_function_1();
+	a_separate_function_2(a, b, c);
 	return 0;
 }
