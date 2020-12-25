@@ -1,0 +1,111 @@
+//возможен некорректный пользовательский ввод
+#include <iostream>
+#include<string>
+using namespace std;
+
+string v = "3";
+
+class Mouse
+{
+public:
+
+string name;
+string color;
+int age;
+
+Mouse(string n, string c, int a)
+{
+name = n;
+color = c;
+age = a;
+}
+
+Mouse()
+{
+name = "Jim";
+color = "Black";
+age = 2;
+}
+
+void changename()
+{
+cin >> name;
+}
+
+void changecolor()
+{
+cin >> color;
+}
+
+void changeage()
+{
+cin >> age;
+}
+
+};
+
+int main()
+{
+Mouse mouse1("Tom", "White", 3);
+Mouse mouse2 = Mouse();
+
+while (0==0)
+{
+    if (v=="1")
+    {
+    cout << "Введите пункт для изменения (Name/Color/Age)" << endl;
+    cin >> v;
+	    if (v=="Name")
+	    {
+	    cout << "Введите имя" << endl;
+	    mouse1.changename();
+	    }
+	    else if (v=="Color")
+   	    {
+	    cout << "Введите цвет" << endl;
+	    mouse1.changecolor();
+    	    }
+	    else if (v=="Age")
+	    {
+	    cout << "Введите возраст" << endl;
+	    mouse1.changeage();
+	    }
+	    else
+	    {
+	    cout << "Некорректное название пункта" << endl;
+	    }
+    }
+    else if (v=="2")
+    {
+    cout << "Введите пункт для изменения (Name/Color/Age)" << endl;
+    cin >> v;
+	    if (v=="Name")
+	    {
+	    cout << "Введите имя" << endl;
+	    mouse2.changename();
+	    }
+	    else if (v=="Color")
+   	    {
+	    cout << "Введите цвет" << endl;
+	    mouse2.changecolor();
+    	    }
+	    else if (v=="Age")
+	    {
+	    cout << "Введите возраст" << endl;
+	    mouse2.changeage();
+	    }
+	    else
+	    {
+	    cout << "Некорректное название пункта" << endl;
+	    }
+    }
+    else
+    {
+    cout << "Name: " << mouse1.name << "\tColor: " << mouse1.color << "\tAge: " << mouse1.age << endl;
+    cout << "Name: " << mouse2.name << "\tColor: " << mouse2.color << "\tAge: " << mouse2.age << endl;
+    cout << "Введите номер мыши для редактирования (1/2)" << endl;
+    cin >> v;
+    }
+}
+return 0;
+};
