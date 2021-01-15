@@ -17,9 +17,9 @@ public:
         cout << "Weight: " << body_weight << endl;
     }
 
-    void changeName(string name) {
+    void setName(string name) {
         this->name = name;
-    }
+ 
     Human(string name, int year, float body_weight)
     {
         this->name = name;
@@ -32,7 +32,7 @@ int main()
 {
     Human* obj_Human = new Human("Vasya", 12, 80);
     obj_Human->display();
-    obj_Human->changeName("Ivan");
+    obj_Human->setName("Ivan");
     obj_Human->display();
 
     return 0;
