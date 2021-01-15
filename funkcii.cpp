@@ -3,6 +3,7 @@
 
 using namespace std;
 
+private:
 bool i;
 int c=0;
 float a=1.6;
